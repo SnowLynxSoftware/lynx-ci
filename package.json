@@ -1,0 +1,38 @@
+{
+  "name": "@snowlynxsoftware/lynx-ci",
+  "version": "2022.0.1",
+  "description": "An open source Continuous Integration and Delivery platform that is light-weight.",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "npm run build && npm run run:server",
+    "build": "npm run compile",
+    "compile": "npx tsc",
+    "run:help": "node dist/src/main.js",
+    "run:server": "node dist/src/main.js start --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnowLynxSoftware/lynx-ci.git"
+  },
+  "keywords": [
+    "cicd"
+  ],
+  "author": "dylanlegendre09@gmail.com",
+  "license": "agplv3",
+  "bugs": {
+    "url": "https://github.com/SnowLynxSoftware/lynx-ci/issues"
+  },
+  "homepage": "https://github.com/SnowLynxSoftware/lynx-ci#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "dotenv": "^16.0.1",
+    "prettier": "^2.7.1",
+    "typescript": "4.7.4"
+  }
+}
